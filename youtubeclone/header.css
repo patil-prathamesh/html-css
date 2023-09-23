@@ -1,0 +1,128 @@
+.header {
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    background-color: white;
+    border-bottom: 1px solid #cccccc;
+}
+.left-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.hamburger-menu {
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.youtube-logo {
+    height: 20px;
+}
+.middle-section {
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+}
+.search-bar {
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(179, 178, 178);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+    width: 0;
+}
+.search-bar::placeholder {
+    font-family: Roboto;
+    font-size: 16px;
+}
+.search-btn {
+    height: 39px;
+    width: 66px;
+    background-color: #f7f7f7;
+    border: 1px solid #cccccc;
+    margin-left: -1px;
+    margin-right: 10px;
+}
+.search-btn,.voice-search-btn {
+    position: relative;
+}
+.search-btn .tooltip,.voice-search-btn .tooltip {
+    font-family: Roboto;
+    position: absolute;
+    background-color: rgb(109, 107, 107);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    bottom: -50px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-btn:hover .tooltip,.voice-search-btn:hover .tooltip {
+    opacity: 1;
+}
+.search-icon {
+    height: 25px;
+    margin-top: 4px;
+}
+.voice-search-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.voice-search-icon {
+    height: 24px;
+}
+.right-section {
+    margin-right: 20px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#icon {
+    height: 25px;
+}
+.current-user-picture {
+    height: 33px;
+}
+.notifications-icon-div {
+    position: relative;
+}
+.count {
+    position: absolute;
+    background-color: rgb(188, 9, 9);
+    color: white;
+    border-radius: 10px;
+    font-family: Roboto;
+    height: 10px;
+    width: 10px;
+    text-align: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 3px;
+    padding-top: 2px;
+    right:-4px;
+    top: 0px;
+    font-size: 11px;
+}
